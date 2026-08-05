@@ -99,11 +99,11 @@
                 <p class="text-sm text-on-surface-variant font-medium leading-relaxed">PPDB SD Negeri di Kota Semarang diselenggarakan terpadu secara online melalui portal resmi Dinas Pendidikan Kota Semarang.</p>
                 
                 @if($tautanPPDB)
-                    <a href="{{ $tautanPPDB->url }}" target="_blank" class="w-full bg-primary text-on-primary py-3 rounded-full font-label-md font-bold hover:bg-primary/95 transition-all shadow-md text-center block">
+                    <a href="{{ str_replace('ppd.semarangkota.go.id', 'spmb.semarangkota.go.id', $tautanPPDB->url) }}" target="_blank" class="w-full bg-primary text-on-primary py-3 rounded-full font-label-md font-bold hover:bg-primary/95 transition-all shadow-md text-center block">
                         Daftar PPDB Online
                     </a>
                 @else
-                    <a href="https://ppd.semarangkota.go.id" target="_blank" class="w-full bg-primary text-on-primary py-3 rounded-full font-label-md font-bold hover:bg-primary/95 transition-all shadow-md text-center block">
+                    <a href="https://spmb.semarangkota.go.id/" target="_blank" class="w-full bg-primary text-on-primary py-3 rounded-full font-label-md font-bold hover:bg-primary/95 transition-all shadow-md text-center block">
                         Daftar PPDB Online
                     </a>
                 @endif

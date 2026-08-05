@@ -4,13 +4,13 @@
 
 @section('content')
 <!-- Hero Section -->
-<section class="relative min-h-[640px] flex items-center justify-center overflow-hidden">
+<section class="relative min-h-[640px] flex items-start pt-16 md:pt-20 pb-32 justify-center overflow-hidden">
     <div class="absolute inset-0 z-0">
         <img class="w-full h-full object-cover opacity-90" src="{{ asset('images/hero_school.jpg') }}" alt="SDN Bulusan Facade" loading="eager"/>
         <div class="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/70 to-transparent"></div>
     </div>
     <div class="relative z-10 w-full max-w-container-max mx-auto px-4 md:px-margin-desktop grid grid-cols-1 md:grid-cols-12 gap-gutter">
-        <div class="md:col-span-9 lg:col-span-7 flex flex-col justify-center text-white">
+        <div class="md:col-span-9 lg:col-span-7 flex flex-col justify-start text-white">
             <span class="font-label-md text-secondary-fixed mb-4 uppercase tracking-[0.2em] font-bold">Selamat Datang di</span>
             <h1 class="font-headline-lg-mobile md:font-headline-lg text-5xl md:text-6xl text-white mb-6 leading-tight uppercase">SD Negeri Bulusan</h1>
             <p class="font-body-lg text-lg md:text-xl text-white/90 mb-10 max-w-xl leading-relaxed">
@@ -29,7 +29,7 @@
 </section>
 
 <!-- Principal's Welcome -->
-<section class="py-24 px-4 md:px-margin-desktop max-w-container-max mx-auto">
+<section class="py-12 px-4 md:px-margin-desktop max-w-container-max mx-auto">
     <div class="bg-white rounded-[32px] shadow-[0_8px_30px_rgb(0,0,0,0.02)] border border-outline-variant/30 p-8 md:p-16">
         <div class="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-16 items-center">
             <div class="md:col-span-5 relative">
@@ -60,30 +60,9 @@
     </div>
 </section>
 
-<!-- Quick Stats Section -->
-<section class="py-16 bg-surface-variant/40 border-y border-outline-variant/30">
-    <div class="max-w-container-max mx-auto px-4 md:px-margin-desktop grid grid-cols-2 lg:grid-cols-4 gap-8">
-        <div class="text-center space-y-2">
-            <h4 class="text-4xl font-bold text-primary">{{ $stats['guru'] }}</h4>
-            <p class="text-sm text-on-surface-low font-semibold">Guru & Staf Aktif</p>
-        </div>
-        <div class="text-center space-y-2">
-            <h4 class="text-4xl font-bold text-primary">{{ $stats['prestasi'] }}</h4>
-            <p class="text-sm text-on-surface-low font-semibold">Prestasi Siswa</p>
-        </div>
-        <div class="text-center space-y-2">
-            <h4 class="text-4xl font-bold text-primary">{{ $stats['album'] }}</h4>
-            <p class="text-sm text-on-surface-low font-semibold">Album Foto Galeri</p>
-        </div>
-        <div class="text-center space-y-2">
-            <h4 class="text-4xl font-bold text-primary">{{ $stats['video'] }}</h4>
-            <p class="text-sm text-on-surface-low font-semibold">Video Dokumentasi</p>
-        </div>
-    </div>
-</section>
 
 <!-- About & Visi Misi -->
-<section class="py-24 max-w-container-max mx-auto px-4 md:px-margin-desktop">
+<section class="py-12 max-w-container-max mx-auto px-4 md:px-margin-desktop">
     <div class="text-center mb-16">
         <h2 class="font-headline-lg text-3xl md:text-4xl text-primary mb-4">Visi, Misi & Karakter</h2>
         <p class="font-body-lg text-on-surface-variant max-w-2xl mx-auto">Menjadi lembaga pendidikan unggul berkarakter lingkungan.</p>
@@ -113,44 +92,10 @@
     </div>
 </section>
 
-<!-- Extracurricular Preview -->
-<section class="py-24 bg-surface-variant/30">
-    <div class="max-w-container-max mx-auto px-4 md:px-margin-desktop">
-        <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
-            <div>
-                <span class="font-label-md text-secondary uppercase font-bold tracking-wider mb-2 block">Minat & Bakat</span>
-                <h2 class="font-headline-lg text-3xl md:text-4xl text-primary">Ekstrakurikuler Unggulan</h2>
-            </div>
-            <a href="{{ route('ekstrakurikuler') }}" class="px-8 py-3 bg-white text-primary border border-outline-variant font-label-md rounded-full hover:bg-surface-variant transition-colors font-bold whitespace-nowrap">
-                Lihat Semua Kegiatan
-            </a>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="group bg-white rounded-[24px] overflow-hidden shadow-sm border border-outline-variant/30 hover:shadow-md transition-all">
-                <div class="aspect-video relative overflow-hidden">
-                    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="{{ asset('images/kegiatan_1.jpg') }}" alt="Lingkungan Hijau" loading="lazy"/>
-                </div>
-                <div class="p-8">
-                    <h3 class="font-headline-md text-2xl text-primary mb-2">Lingkungan Hijau Adiwiyata</h3>
-                    <p class="font-body-md text-on-surface-variant leading-relaxed">Lingkungan bermain yang hijau dan rindang di luar ruang kelas sebagai sarana penanaman karakter peduli lingkungan hidup sejak dini.</p>
-                </div>
-            </div>
-            <div class="group bg-white rounded-[24px] overflow-hidden shadow-sm border border-outline-variant/30 hover:shadow-md transition-all">
-                <div class="aspect-video relative overflow-hidden">
-                    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="{{ asset('images/kegiatan_2.jpg') }}" alt="Sarana Belajar" loading="lazy"/>
-                </div>
-                <div class="p-8">
-                    <h3 class="font-headline-md text-2xl text-primary mb-2">Sarana Pendidikan Interaktif</h3>
-                    <p class="font-body-md text-on-surface-variant leading-relaxed">Fasilitas kelas dan sarana pembelajaran terawat dan interaktif guna mendukung kenyamanan transfer ilmu guru ke murid.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 <!-- Service Buttons / Tautan Layanan -->
 @if($tautan->isNotEmpty())
-    <section class="py-24 px-4 md:px-margin-desktop max-w-container-max mx-auto">
+    <section class="py-12 px-4 md:px-margin-desktop max-w-container-max mx-auto">
         <div class="text-center mb-16">
             <h2 class="font-headline-lg text-3xl md:text-4xl text-primary mb-4">Layanan Digital Terintegrasi</h2>
             <p class="font-body-lg text-on-surface-variant max-w-xl mx-auto">Akses layanan publik resmi Kota Semarang dan Dapodik secara praktis.</p>
@@ -173,7 +118,7 @@
 @endif
 
 <!-- Info Center / Pusat Informasi Tabs -->
-<section class="py-24 bg-surface-variant/30 border-y border-outline-variant/30">
+<section class="py-12 bg-surface-variant/30 border-y border-outline-variant/30">
     <div class="max-w-container-max mx-auto px-4 md:px-margin-desktop">
         <div class="text-center mb-16">
             <h2 class="font-headline-lg text-3xl md:text-4xl text-primary mb-4">Pusat Informasi Terkini</h2>
@@ -261,7 +206,7 @@
 </section>
 
 <!-- Dedicated Admission Banner / PPDB -->
-<section class="py-24 px-4 md:px-margin-desktop max-w-container-max mx-auto">
+<section class="py-12 px-4 md:px-margin-desktop max-w-container-max mx-auto">
     <div class="bg-white rounded-[32px] shadow-xl overflow-hidden border border-outline-variant/30">
         <div class="grid grid-cols-1 lg:grid-cols-2">
             <div class="p-8 md:p-16 flex flex-col justify-center space-y-6">
@@ -289,12 +234,20 @@
                     </a>
                 </div>
             </div>
-            <div class="relative min-h-[360px] bg-primary">
-                <img class="absolute inset-0 w-full h-full object-cover opacity-80 mix-blend-overlay" src="{{ asset('images/kegiatan_3.jpg') }}" alt="Students learning" loading="lazy"/>
-                <div class="absolute inset-0 flex items-center justify-center p-8">
-                    <div class="bg-white/10 backdrop-blur-md p-8 rounded-[24px] border border-white/20 text-white max-w-sm text-center">
-                        <h4 class="font-headline-md text-xl font-bold mb-2">Tahun Ajaran Baru</h4>
-                        <p class="font-body-md text-xs text-white/90">Siapkan berkas Anda dari sekarang. Pendaftaran sekolah dasar negeri di Kota Semarang terintegrasi PPDB online Kota Semarang.</p>
+            <div class="relative min-h-[360px] lg:min-h-full">
+                <img class="absolute inset-0 w-full h-full object-cover" src="{{ asset('images/guru_ppdb.png') }}" alt="Guru SDN Bulusan" loading="lazy"/>
+                <div class="absolute inset-0 flex items-center justify-center p-8 bg-black/10">
+                    <div class="bg-white p-8 rounded-[32px] shadow-2xl max-w-sm text-left relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-secondary/10 rounded-bl-[100px] z-0 group-hover:scale-110 transition-transform duration-500"></div>
+                        <div class="relative z-10">
+                            <h4 class="font-headline-md text-2xl font-bold text-primary mb-3 flex items-center gap-2">
+                                <span class="material-symbols-outlined text-secondary">verified</span>
+                                Tahun Ajaran Baru
+                            </h4>
+                            <p class="font-body-md text-sm text-on-surface-variant leading-relaxed">
+                                Siapkan berkas Anda dari sekarang. Pendaftaran sekolah dasar negeri terintegrasi melalui PPDB online terpadu Kota Semarang.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>

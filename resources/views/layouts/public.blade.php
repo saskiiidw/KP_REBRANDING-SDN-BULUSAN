@@ -42,23 +42,13 @@
                 <!-- Brand/Identity -->
                 <div class="col-span-1 lg:col-span-1">
                     <h2 class="font-headline-md text-2xl text-on-primary mb-6 flex items-center gap-3">
-                        <img alt="School Logo" class="h-10 w-auto brightness-0 invert" src="{{ asset('images/logo.png') }}" loading="lazy"/>
+                        <img alt="School Logo" class="h-12 w-auto" src="{{ asset('images/logo.png') }}" loading="lazy"/>
                         SDN Bulusan
                     </h2>
                     <p class="text-on-primary/80 mb-8 leading-relaxed">
                         Menyediakan pendidikan dasar yang berkualitas, membentuk karakter siswa yang berbudi pekerti luhur, cerdas, dan terampil.
                     </p>
-                    <div class="flex gap-4">
-                        <a class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors" href="#">
-                            <span class="material-symbols-outlined">qr_code_2</span>
-                        </a>
-                        <a class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors" href="https://www.youtube.com">
-                            <span class="material-symbols-outlined">smart_display</span>
-                        </a>
-                        <a class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors" href="#">
-                            <span class="material-symbols-outlined">photo_camera</span>
-                        </a>
-                    </div>
+
                 </div>
                 
                 <!-- Quick Links -->
@@ -103,14 +93,6 @@
                 </div>
             </div>
             
-            <!-- Copyright -->
-            <div class="pt-8 mt-16 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-on-primary/60 text-sm">
-                <p>© {{ date('Y') }} SDN Bulusan. Hak Cipta Dilindungi.</p>
-                <div class="flex gap-6">
-                    <a class="hover:text-white transition-colors" href="#">Kebijakan Privasi</a>
-                    <a class="hover:text-white transition-colors" href="#">Syarat dan Ketentuan</a>
-                </div>
-            </div>
         </div>
     </footer>
 

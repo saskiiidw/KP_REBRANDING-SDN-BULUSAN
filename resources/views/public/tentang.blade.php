@@ -12,7 +12,7 @@
 </section>
 
 <!-- Main Details -->
-<section class="py-20 px-4 max-w-container-max mx-auto">
+<section class="pt-20 pb-12 px-4 md:px-margin-desktop max-w-container-max mx-auto">
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16">
         <!-- Visi, Misi & Sejarah -->
         <div class="lg:col-span-2 space-y-12">
@@ -43,15 +43,7 @@
                 </div>
             @endif
 
-            <!-- Struktur Organisasi -->
-            @if($profil->struktur_organisasi)
-                <div id="struktur" class="scroll-mt-[96px] bg-white p-8 md:p-10 rounded-[28px] shadow-sm border border-outline-variant/30 space-y-6">
-                    <h2 class="font-headline-md text-2xl font-bold text-primary border-b border-outline-variant/20 pb-4">Struktur Organisasi</h2>
-                    <div class="rounded-xl overflow-hidden border">
-                        <img src="{{ asset('storage/' . $profil->struktur_organisasi) }}" class="w-full h-auto object-contain" alt="Struktur Organisasi"/>
-                    </div>
-                </div>
-            @endif
+
         </div>
 
         <!-- Right Side: Identity Cards & Headmaster Welcome -->
@@ -112,11 +104,11 @@
 </section>
 
 <!-- Guru & Staf Section -->
-<section id="guru-staf" class="scroll-mt-[96px] py-24 bg-surface-variant/20 border-t border-outline-variant/10">
+<section id="guru-staf" class="scroll-mt-[96px] pt-12 pb-24 bg-surface-variant/20 border-t border-outline-variant/10">
     <div class="max-w-container-max mx-auto px-4 md:px-margin-desktop">
-        <div class="text-center mb-16 space-y-4">
-            <span class="font-label-md text-secondary uppercase tracking-wider font-bold">Tim Pendidik</span>
-            <h2 class="font-headline-lg text-3xl md:text-4xl text-primary font-bold">Guru & Staf Akademik</h2>
+        <div class="text-center mb-16">
+            <span class="font-label-md text-secondary uppercase tracking-wider font-bold block mb-4">Tim Pendidik</span>
+            <h2 class="font-headline-lg text-3xl md:text-4xl text-primary font-bold mb-4">Guru & Staf Akademik</h2>
             <p class="font-body-lg text-on-surface-variant max-w-2xl mx-auto text-sm font-semibold">Para pendidik berdedikasi yang siap membimbing putra-putri Anda meraih masa depan cerah.</p>
         </div>
         

@@ -219,10 +219,26 @@ class DatabaseSeeder extends Seeder
         ]);
  
         TautanLayanan::create([
-            'nama_layanan' => 'Sistem Sang Juara',
-            'url' => 'https://sangjuara.semarangkota.go.id',
+            'nama_layanan' => 'Sang Juara',
+            'url' => 'https://portaldisdik.semarangkota.go.id/',
             'ikon' => 'emoji_events',
             'urutan' => 2,
+            'is_eksternal' => true
+        ]);
+
+        TautanLayanan::create([
+            'nama_layanan' => 'SPMB',
+            'url' => 'https://spmb.semarangkota.go.id/',
+            'ikon' => 'school',
+            'urutan' => 3,
+            'is_eksternal' => true
+        ]);
+
+        TautanLayanan::create([
+            'nama_layanan' => 'SIGAP',
+            'url' => 'https://sigap-disdik.semarangkota.go.id/',
+            'ikon' => 'security',
+            'urutan' => 4,
             'is_eksternal' => true
         ]);
         

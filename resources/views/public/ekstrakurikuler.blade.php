@@ -20,21 +20,34 @@
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         @foreach($ekskul as $e)
-            <div class="bg-white p-8 md:p-10 rounded-[28px] shadow-[0_8px_30px_rgb(0,0,0,0.01)] border border-outline-variant/30 flex flex-col justify-between hover:shadow-md hover:-translate-y-0.5 transition-all group">
-                <div class="space-y-6">
-                    <div class="w-14 h-14 rounded-full bg-secondary/15 text-secondary flex items-center justify-center shrink-0 group-hover:bg-secondary group-hover:text-white transition-all">
-                        <span class="material-symbols-outlined text-3xl">{{ $e['ikon'] }}</span>
-                    </div>
+            <div class="bg-white rounded-[28px] overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.01)] border border-outline-variant/30 flex flex-col hover:shadow-md hover:-translate-y-0.5 transition-all group">
+                <!-- Image Header -->
+                @php
+                    $imageName = 'pramuka_illustration.jpg';
+                    if(str_contains(strtolower($e['nama']), 'batik')) $imageName = 'batik_illustration.jpg';
+                    if(str_contains(strtolower($e['nama']), 'tari')) $imageName = 'tari_illustration.jpg';
+                    if(str_contains(strtolower($e['nama']), 'komputer')) $imageName = 'komputer_illustration.jpg';
+                    if(str_contains(strtolower($e['nama']), 'rebana')) $imageName = 'rebana_illustration.jpg';
+                    if(str_contains(strtolower($e['nama']), 'drumband')) $imageName = 'drumband_illustration.jpg';
                     
-                    <div class="space-y-3">
-                        <h3 class="font-headline-md text-xl font-bold text-primary group-hover:text-secondary transition-colors">{{ $e['nama'] }}</h3>
-                        <p class="text-sm text-on-surface-variant leading-relaxed">{{ $e['deskripsi'] }}</p>
+                    $bgImage = asset('images/' . $imageName);
+                @endphp
+                <div class="h-48 relative overflow-hidden bg-surface-variant shrink-0">
+                    <img src="{{ $bgImage }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="{{ $e['nama'] }}" loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                    <div class="absolute top-4 right-4 w-12 h-12 rounded-xl bg-white/95 backdrop-blur text-primary flex items-center justify-center shadow-lg">
+                        <span class="material-symbols-outlined text-2xl">{{ $e['ikon'] }}</span>
                     </div>
+                    <h3 class="absolute bottom-4 left-6 font-headline-md text-xl font-bold text-white">{{ $e['nama'] }}</h3>
                 </div>
 
-                <div class="pt-6 mt-6 border-t border-outline-variant/20 flex justify-between items-center text-xs font-semibold text-primary">
-                    <span class="text-on-surface-low font-normal">Jadwal Latihan:</span>
-                    <span class="bg-surface-variant/70 px-3 py-1 rounded-full text-secondary font-bold">{{ $e['jadwal'] }}</span>
+                <div class="p-6 md:p-8 flex flex-col justify-between flex-grow space-y-6">
+                    <p class="text-sm text-on-surface-variant leading-relaxed">{{ $e['deskripsi'] }}</p>
+
+                    <div class="pt-6 border-t border-outline-variant/20 flex justify-between items-center text-xs font-semibold text-primary mt-auto">
+                        <span class="text-on-surface-low font-normal">Jadwal Latihan:</span>
+                        <span class="bg-surface-variant/70 px-3 py-1 rounded-full text-secondary font-bold">{{ $e['jadwal'] }}</span>
+                    </div>
                 </div>
             </div>
         @endforeach

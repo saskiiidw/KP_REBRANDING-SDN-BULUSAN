@@ -18,13 +18,12 @@
             <div class="relative group">
                 <button class="flex items-center gap-1 font-label-md lg:text-[13px] xl:text-label-md {{ Request::is('tentang*') ? 'text-secondary font-bold border-b-2 border-secondary pb-1' : 'text-on-surface-variant hover:text-primary transition-colors pb-1' }}">
                     <span>Profil</span>
-                    <span class="material-symbols-outlined text-[16px] transition-transform duration-200 group-hover:rotate-180">keyboard_arrow_down</span>
+                    <span class="material-symbols-outlined text-[16px] transition-transform duration-200 group-hover:rotate-180">arrow_drop_down</span>
                 </button>
                 <div class="absolute left-0 mt-2 w-56 rounded-2xl bg-white/95 backdrop-blur-md border border-outline-variant/30 shadow-[0_8px_30px_rgb(0,0,0,0.06)] py-2 opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-200 z-50">
                     <a href="{{ route('tentang') }}#tentang" class="block px-4 py-2 text-sm text-on-surface-variant hover:bg-surface-variant/50 hover:text-primary transition-colors font-medium">Tentang Sekolah</a>
                     <a href="{{ route('tentang') }}#visi-misi" class="block px-4 py-2 text-sm text-on-surface-variant hover:bg-surface-variant/50 hover:text-primary transition-colors font-medium">Visi & Misi</a>
                     <a href="{{ route('tentang') }}#sambutan" class="block px-4 py-2 text-sm text-on-surface-variant hover:bg-surface-variant/50 hover:text-primary transition-colors font-medium">Sambutan Kepala Sekolah</a>
-                    <a href="{{ route('tentang') }}#struktur" class="block px-4 py-2 text-sm text-on-surface-variant hover:bg-surface-variant/50 hover:text-primary transition-colors font-medium">Struktur Organisasi</a>
                     <a href="{{ route('tentang') }}#guru-staf" class="block px-4 py-2 text-sm text-on-surface-variant hover:bg-surface-variant/50 hover:text-primary transition-colors font-medium">Guru & Staf</a>
                 </div>
             </div>
@@ -33,7 +32,7 @@
             <div class="relative group">
                 <button class="flex items-center gap-1 font-label-md lg:text-[13px] xl:text-label-md {{ Request::is('ekstrakurikuler*') || Request::is('prestasi*') ? 'text-secondary font-bold border-b-2 border-secondary pb-1' : 'text-on-surface-variant hover:text-primary transition-colors pb-1' }}">
                     <span>Akademik</span>
-                    <span class="material-symbols-outlined text-[16px] transition-transform duration-200 group-hover:rotate-180">keyboard_arrow_down</span>
+                    <span class="material-symbols-outlined text-[16px] transition-transform duration-200 group-hover:rotate-180">arrow_drop_down</span>
                 </button>
                 <div class="absolute left-0 mt-2 w-56 rounded-2xl bg-white/95 backdrop-blur-md border border-outline-variant/30 shadow-[0_8px_30px_rgb(0,0,0,0.06)] py-2 opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-200 z-50">
                     <a href="{{ route('ekstrakurikuler') }}" class="block px-4 py-2 text-sm {{ Route::is('ekstrakurikuler') ? 'text-secondary font-bold' : 'text-on-surface-variant' }} hover:bg-surface-variant/50 hover:text-primary transition-colors font-medium">Ekstrakurikuler</a>
@@ -45,7 +44,7 @@
             <div class="relative group">
                 <button class="flex items-center gap-1 font-label-md lg:text-[13px] xl:text-label-md {{ Request::is('pusat-informasi*') || Request::is('berita*') ? 'text-secondary font-bold border-b-2 border-secondary pb-1' : 'text-on-surface-variant hover:text-primary transition-colors pb-1' }}">
                     <span>Pusat Informasi</span>
-                    <span class="material-symbols-outlined text-[16px] transition-transform duration-200 group-hover:rotate-180">keyboard_arrow_down</span>
+                    <span class="material-symbols-outlined text-[16px] transition-transform duration-200 group-hover:rotate-180">arrow_drop_down</span>
                 </button>
                 <div class="absolute left-0 mt-2 w-56 rounded-2xl bg-white/95 backdrop-blur-md border border-outline-variant/30 shadow-[0_8px_30px_rgb(0,0,0,0.06)] py-2 opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-200 z-50">
                     <a href="{{ route('pusat-informasi') }}?tab=berita" class="block px-4 py-2 text-sm {{ Request::is('pusat-informasi*') && request('tab') == 'berita' ? 'text-secondary font-bold' : 'text-on-surface-variant' }} hover:bg-surface-variant/50 hover:text-primary transition-colors font-medium">Berita</a>
@@ -72,8 +71,8 @@
         
         <!-- Actions & Mobile Trigger -->
         <div class="flex items-center gap-2 xl:gap-4 shrink-0">
-            <a href="{{ route('penerimaan') }}" class="bg-primary text-on-primary px-4 py-1.5 xl:px-6 xl:py-2 rounded-full font-label-md lg:text-xs xl:text-label-md hover:bg-primary/90 transition-colors hidden sm:block whitespace-nowrap">
-                Daftar Sekarang
+            <a href="https://spmb.semarangkota.go.id/" target="_blank" class="bg-primary text-on-primary px-4 py-1.5 xl:px-6 xl:py-2 rounded-full font-label-md lg:text-xs xl:text-label-md hover:bg-primary/90 transition-colors hidden sm:block whitespace-nowrap">
+                Daftar SPMB
             </a>
             
             @auth
@@ -82,7 +81,7 @@
                 </a>
             @else
                 <a href="{{ route('login') }}" class="text-on-surface-variant hover:bg-secondary-container/20 rounded-full transition-all p-2 duration-150 ease-in-out flex items-center justify-center shrink-0" title="Login Operator">
-                    <span class="material-symbols-outlined">login</span>
+                    <span class="material-symbols-outlined">account_circle</span>
                 </a>
             @endauth
 
@@ -104,13 +103,12 @@
         <div class="flex flex-col">
             <button onclick="toggleMobileSubmenu('mobile-submenu-profil')" class="flex justify-between items-center text-on-surface hover:text-secondary font-medium py-2 w-full text-left">
                 <span>Profil</span>
-                <span id="mobile-arrow-profil" class="material-symbols-outlined transition-transform duration-200">keyboard_arrow_down</span>
+                <span id="mobile-arrow-profil" class="material-symbols-outlined transition-transform duration-200">arrow_drop_down</span>
             </button>
             <div id="mobile-submenu-profil" class="hidden flex flex-col pl-4 gap-2 border-l border-outline-variant/30 mt-1">
                 <a href="{{ route('tentang') }}#tentang" class="text-on-surface-variant hover:text-secondary py-1 text-sm">Tentang Sekolah</a>
                 <a href="{{ route('tentang') }}#visi-misi" class="text-on-surface-variant hover:text-secondary py-1 text-sm">Visi & Misi</a>
                 <a href="{{ route('tentang') }}#sambutan" class="text-on-surface-variant hover:text-secondary py-1 text-sm">Sambutan Kepala Sekolah</a>
-                <a href="{{ route('tentang') }}#struktur" class="text-on-surface-variant hover:text-secondary py-1 text-sm">Struktur Organisasi</a>
                 <a href="{{ route('tentang') }}#guru-staf" class="text-on-surface-variant hover:text-secondary py-1 text-sm">Guru & Staf</a>
             </div>
         </div>
@@ -119,7 +117,7 @@
         <div class="flex flex-col">
             <button onclick="toggleMobileSubmenu('mobile-submenu-akademik')" class="flex justify-between items-center text-on-surface hover:text-secondary font-medium py-2 w-full text-left">
                 <span>Akademik</span>
-                <span id="mobile-arrow-akademik" class="material-symbols-outlined transition-transform duration-200">keyboard_arrow_down</span>
+                <span id="mobile-arrow-akademik" class="material-symbols-outlined transition-transform duration-200">arrow_drop_down</span>
             </button>
             <div id="mobile-submenu-akademik" class="hidden flex flex-col pl-4 gap-2 border-l border-outline-variant/30 mt-1">
                 <a href="{{ route('ekstrakurikuler') }}" class="text-on-surface-variant hover:text-secondary py-1 text-sm {{ Route::is('ekstrakurikuler') ? 'text-secondary font-bold' : '' }}">Ekstrakurikuler</a>
@@ -131,7 +129,7 @@
         <div class="flex flex-col">
             <button onclick="toggleMobileSubmenu('mobile-submenu-informasi')" class="flex justify-between items-center text-on-surface hover:text-secondary font-medium py-2 w-full text-left">
                 <span>Pusat Informasi</span>
-                <span id="mobile-arrow-informasi" class="material-symbols-outlined transition-transform duration-200">keyboard_arrow_down</span>
+                <span id="mobile-arrow-informasi" class="material-symbols-outlined transition-transform duration-200">arrow_drop_down</span>
             </button>
             <div id="mobile-submenu-informasi" class="hidden flex flex-col pl-4 gap-2 border-l border-outline-variant/30 mt-1">
                 <a href="{{ route('pusat-informasi') }}?tab=berita" class="text-on-surface-variant hover:text-secondary py-1 text-sm">Berita</a>
@@ -156,8 +154,8 @@
         </a>
         
         <!-- Mobile Actions -->
-        <a href="{{ route('penerimaan') }}" class="bg-primary text-on-primary text-center py-2.5 rounded-full font-label-md font-bold mt-4">
-            Daftar Sekarang
+        <a href="https://spmb.semarangkota.go.id/" target="_blank" class="bg-primary text-on-primary text-center py-2.5 rounded-full font-label-md font-bold mt-4">
+            Daftar SPMB
         </a>
         @auth
             <a href="{{ route('admin.dashboard') }}" class="bg-secondary text-on-secondary text-center py-2.5 rounded-full font-label-md font-bold mt-2">

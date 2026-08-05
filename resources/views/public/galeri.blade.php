@@ -53,9 +53,9 @@
                         </div>
                     </div>
                 @empty
-                    <div class="col-span-3 py-16 text-center text-on-surface-low">
-                        <span class="material-symbols-outlined text-5xl block mb-2">photo_library</span>
-                        Belum ada album foto yang dipublikasikan.
+                    <div class="col-span-3 py-16 text-center text-on-surface-low flex flex-col items-center justify-center">
+                        <span class="material-symbols-outlined text-6xl mb-4 text-on-surface-low/50">photo_library</span>
+                        <p class="text-lg">Belum ada album foto yang dipublikasikan.</p>
                     </div>
                 @endforelse
             </div>
@@ -72,9 +72,9 @@
                         </div>
                     </div>
                 @empty
-                    <div class="col-span-2 py-16 text-center text-on-surface-low">
-                        <span class="material-symbols-outlined text-5xl block mb-2">video_library</span>
-                        Belum ada video dokumentasi yang dipublikasikan.
+                    <div class="col-span-2 py-16 text-center text-on-surface-low flex flex-col items-center justify-center">
+                        <span class="material-symbols-outlined text-6xl mb-4 text-on-surface-low/50">video_library</span>
+                        <p class="text-lg">Belum ada video dokumentasi yang dipublikasikan.</p>
                     </div>
                 @endforelse
             </div>
