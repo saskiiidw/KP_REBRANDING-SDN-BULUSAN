@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SDN Bulusan - Beranda</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700&amp;family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "inverse-primary": "#aec7f6",
+                "surface-container-high": "#e8e8e8",
+                "on-tertiary-fixed": "#2b1700",
+                "on-primary-container": "#708ab5",
+                "surface-container-lowest": "#ffffff",
+                "background": "#f9f9f9",
+                "secondary": "#3b6934",
+                "surface-dim": "#dadada",
+                "on-secondary": "#ffffff",
+                "tertiary": "#130800",
+                "error-container": "#ffdad6",
+                "on-surface-low": "#808080",
+                "surface-tint": "#465f88",
+                "on-tertiary-container": "#c07900",
+                "on-secondary-fixed": "#002201",
+                "surface-variant": "#F1F5F0",
+                "surface-container-low": "#f3f3f4",
+                "surface": "#f9f9f9",
+                "on-surface": "#1a1c1c",
+                "on-error": "#ffffff",
+                "outline": "#74777f",
+                "secondary-fixed": "#bcf0ae",
+                "outline-variant": "#c4c6cf",
+                "on-background": "#1a1c1c",
+                "tertiary-fixed": "#ffddb9",
+                "error": "#ba1a1a",
+                "on-surface-variant": "#44474e",
+                "on-primary-fixed": "#001b3d",
+                "surface-bright": "#f9f9f9",
+                "on-secondary-fixed-variant": "#23501e",
+                "secondary-fixed-dim": "#a1d494",
+                "secondary-container": "#b9eeab",
+                "primary-container": "#002147",
+                "primary-fixed-dim": "#aec7f6",
+                "on-error-container": "#93000a",
+                "primary": "#000a1e",
+                "on-primary-fixed-variant": "#2d476f",
+                "inverse-surface": "#2f3131",
+                "inverse-on-surface": "#f0f1f1",
+                "on-tertiary": "#ffffff",
+                "tertiary-container": "#321c00",
+                "primary-fixed": "#d6e3ff",
+                "on-primary": "#ffffff",
+                "on-tertiary-fixed-variant": "#663e00",
+                "tertiary-fixed-dim": "#ffb961",
+                "surface-container-highest": "#e2e2e2",
+                "on-surface-high": "#1A1C1E",
+                "on-secondary-container": "#3f6d38",
+                "surface-container": "#eeeeee"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+        },
+        "spacing": {
+                "container-max": "1280px",
+                "base": "8px",
+                "gutter": "24px",
+                "margin-mobile": "16px",
+                "margin-desktop": "64px"
+        },
+        "fontFamily": {
+                "body-lg": [
+                        "Inter"
+                ],
+                "headline-md": [
+                        "Hanken Grotesk"
+                ],
+                "label-md": [
+                        "Inter"
+                ],
+                "body-md": [
+                        "Inter"
+                ],
+                "headline-lg-mobile": [
+                        "Hanken Grotesk"
+                ],
+                "headline-lg": [
+                        "Hanken Grotesk"
+                ]
+        },
+        "fontSize": {
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "28px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-md": [
+                        "24px",
+                        {
+                                "lineHeight": "32px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "label-md": [
+                        "14px",
+                        {
+                                "lineHeight": "20px",
+                                "letterSpacing": "0.1px",
+                                "fontWeight": "500"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "24px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-lg-mobile": [
+                        "32px",
+                        {
+                                "lineHeight": "40px",
+                                "letterSpacing": "-0.01em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "headline-lg": [
+                        "48px",
+                        {
+                                "lineHeight": "56px",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "700"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+<style>
+        .material-symbols-outlined {
+          font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1;
+        }
+      </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased overflow-x-hidden">
+<!-- Top Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant/30 shadow-sm flex justify-between items-center px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="flex items-center gap-4">
+<img alt="School Logo" class="h-10 w-auto" src="https://lh3.googleusercontent.com/aida/AP1WRLtBqz5NMsp-WWL3_jAw8QFdW6yJFVLOUY46Fw1i9QpmeHf7vxv4oipnmv3IU-2gJRUeXSbA2gED1DjFOdEFnJvStmCjbtYfdvUURRKkFrYhXB2vvKRAFfBQd6I4lz426iGknj-kLpzTHbCG2FfpQfuBWNbczZ853OFTqdKdrUjF30_xuDHagEIQVBmAyOAfFIMEH_rN6s8T5M5v8MQN1IBpKCq2P0n5YF3ZBH0RzqvxecuXvvbw1BYv8wc"/>
+<span class="font-headline-md text-headline-md font-bold text-primary">SDN Bulusan</span>
+</div>
+<div class="hidden lg:flex items-center gap-6">
+<a class="text-secondary font-bold border-b-2 border-secondary pb-1 font-body-md text-label-md" href="#">Beranda</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-label-md" href="#">Profil</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-label-md" href="#">Penerimaan</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-label-md" href="#">Kegiatan</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-label-md" href="#">Galeri</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-label-md" href="#">Kontak</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-on-surface-variant hover:bg-secondary-container/20 rounded-full transition-all p-2 scale-95 duration-150 ease-in-out">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-md hover:bg-primary/90 transition-colors hidden sm:block">
+                Daftar Sekarang
+            </button>
+<button class="lg:hidden text-on-surface-variant p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main class="pt-[80px]"> <!-- Offset for fixed nav -->
+<!-- Hero Section -->
+<section class="relative min-h-[700px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-90" data-alt="A wide angle shot of the SD Negeri Bulusan school building facade on a sunny day dengan clear blue sky, capturing the architecture and entrance." src="https://lh3.googleusercontent.com/aida/AP1WRLuyPw7sR4IMkfU89WXe9rxQMbeEonr6osYACPteDlCMvmtFIkLgc1wEvnhWHJtyvJunN6Trkyd8kFv986uviD7flnmR5T_k2Uaakz1iKjKSkn2hXn12MTnoX40V7VH96RzgpR5N-W0HWUw_lL4ZNcf5sHS1LnuCbESmoiYhNhXlx3PmtxCDyujI2m0ZJyLyicNIpkUYYkKWgLDQAd8guEstDi1j3lq1_4dhS5GcucLjyetRUydMWXE-c_o"/>
+<div class="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/60 to-transparent"></div>
+</div>
+<div class="relative z-10 w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-9 lg:col-span-7 flex flex-col justify-center text-white">
+<span class="font-label-md text-secondary-fixed mb-4 uppercase tracking-[0.2em] font-bold">Selamat Datang di</span>
+<h1 class="font-headline-lg-mobile md:font-headline-lg text-5xl md:text-6xl text-white mb-6 leading-tight">SD NEGERI BULUSAN</h1>
+<p class="font-body-lg text-xl text-white/90 mb-10 max-w-xl leading-relaxed">
+                        Menyelenggarakan pendidikan dasar berkualitas di Semarang. Membentuk siswa yang cerdas, kreatif, dan berkarakter.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-secondary text-on-secondary px-8 py-4 rounded-full font-label-md font-bold hover:bg-secondary/90 transition-all shadow-lg hover:shadow-xl hover:-translate-y-1">
+                            Informasi Pendaftaran
+                        </button>
+<button class="bg-white/10 backdrop-blur-md border border-white/30 text-white px-8 py-4 rounded-full font-label-md font-bold hover:bg-white/20 transition-all hover:-translate-y-1">
+                            Jelajahi Sekolah
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Principal's Welcome -->
+<section class="py-32 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="bg-white rounded-[24px] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-outline-variant/10 p-8 md:p-16">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
+<div class="md:col-span-5 relative">
+<div class="aspect-[4/5] rounded-[24px] overflow-hidden shadow-2xl border-8 border-surface-variant">
+<img class="w-full h-full object-cover" data-alt="Professional portrait photograph of Harmana, the principal of SDN Bulusan, wearing a formal uniform, looking friendly and welcoming." src="https://lh3.googleusercontent.com/aida/AP1WRLtO_bzhnBRvwxqoGUAxbNkwpCVuOrtxGQWUpNspfwdQE40VyswiLIcWELd2CZjAqVdliTFgRb4q9VPq1D32856qolB-te8xWosXVfG1uqy7FuSl7bpGrSB4ZSsPvtUFgN0y_LGEiWyozHMARl9jM0hjMu2aY6kfLcVVw3pJvHzacZ2b2I_x4IsxM-nKT2rw1LKiSCHG6_DGPN7hUqAvN5iIrrqBj9uyGpsU8gNepcWuYI2p7zkdacoIu-c"/>
+</div>
+<div class="absolute -bottom-8 -right-8 bg-secondary text-white p-6 rounded-[20px] shadow-xl">
+<span class="material-symbols-outlined text-5xl">school</span>
+</div>
+</div>
+<div class="md:col-span-7">
+<h2 class="font-headline-lg text-4xl text-primary mb-4">SAMBUTAN KEPALA SEKOLAH</h2>
+<h3 class="font-headline-md text-2xl text-secondary mb-8">Harmana, S.Pd.SD</h3>
+<div class="font-body-lg text-on-surface-variant space-y-6 leading-relaxed">
+<p><strong>Asalamualaikum warohmatullahi wabarokatuh.</strong></p>
+<p>Salam sehat, bahagia dan sejahtera selalu untuk kita semua. Izinkan saya selaku Kepala Sekolah Dasar Negeri Bulusan Kota Semarang untuk mengenalkan profil sekolah kami melalui website ini.</p>
+<p>Alhamdulillah, puji syukur senantiasa kita panjatkan ke hadirat Tuhan Yang Maha Kuasa atas semua limpahan rahmat dan hidayahNya kepada kita, terutama nikmat sehat, sehingga kita masih diberi kesempatan untuk bersama-sama berkarya...</p>
+</div>
+<button class="mt-10 text-secondary font-label-md font-bold flex items-center gap-2 hover:text-secondary-fixed transition-colors text-lg group">
+                            Baca Selengkapnya <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- About School -->
+<section class="py-32 bg-surface-variant/30">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-4xl text-primary mb-4">Tentang SDN Bulusan</h2>
+<p class="font-body-lg text-on-surface-variant max-w-2xl mx-auto">Membangun generasi penerus bangsa yang berakhlak mulia, cerdas, dan terampil.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-white p-10 rounded-[24px] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-outline-variant/10 text-center hover:-translate-y-2 transition-transform duration-300">
+<div class="w-20 h-20 bg-primary-fixed/30 rounded-full flex items-center justify-center mx-auto mb-6 text-primary">
+<span class="material-symbols-outlined text-4xl">visibility</span>
+</div>
+<h3 class="font-headline-md text-2xl text-primary mb-4">Visi</h3>
+<p class="font-body-md text-on-surface-variant">Terwujudnya peserta didik yang beriman, bertakwa, berakhlak mulia, berprestasi, berkarakter, dan berbudaya lingkungan.</p>
+</div>
+<div class="bg-white p-10 rounded-[24px] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-outline-variant/10 text-center hover:-translate-y-2 transition-transform duration-300">
+<div class="w-20 h-20 bg-secondary-container/30 rounded-full flex items-center justify-center mx-auto mb-6 text-secondary">
+<span class="material-symbols-outlined text-4xl">rocket_launch</span>
+</div>
+<h3 class="font-headline-md text-2xl text-primary mb-4">Misi</h3>
+<p class="font-body-md text-on-surface-variant">Menyelenggarakan pendidikan yang bermutu, inovatif, dan inklusif. Membina karakter siswa melalui pembiasaan positif.</p>
+</div>
+<div class="bg-white p-10 rounded-[24px] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-outline-variant/10 text-center hover:-translate-y-2 transition-transform duration-300">
+<div class="w-20 h-20 bg-tertiary-fixed/30 rounded-full flex items-center justify-center mx-auto mb-6 text-tertiary">
+<span class="material-symbols-outlined text-4xl">menu_book</span>
+</div>
+<h3 class="font-headline-md text-2xl text-primary mb-4">Fasilitas</h3>
+<p class="font-body-md text-on-surface-variant">Ruang kelas nyaman, perpustakaan lengkap, laboratorium komputer, lapangan olahraga, dan lingkungan hijau.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Extracurricular Preview -->
+<section class="py-32 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div>
+<h2 class="font-headline-lg text-4xl text-primary mb-4">Kegiatan Siswa</h2>
+<p class="font-body-lg text-on-surface-variant max-w-2xl">Berbagai program ekstrakurikuler untuk mengembangkan bakat dan minat.</p>
+</div>
+<button class="px-8 py-3 bg-surface-variant text-on-surface-variant font-label-md rounded-full hover:bg-surface-dim transition-colors font-bold whitespace-nowrap">
+        Lihat Semua Kegiatan
+    </button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+<div class="group bg-white rounded-[24px] overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-outline-variant/10 hover:shadow-xl transition-all">
+<div class="aspect-video relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AP1WRLvwHUEuFbF5N0mn4Jf-Fa00pzjJXr19vq04oB0zaGY71Lj8MUMlzVUtofp3NMEoQK147I5ho1tTALM-73qf1cmDukgVcKmXoF6DcvsmZHbfucaP5vgBh0VvHs58upjO8E-M9LvgyEmsI7xwTaF0beSwdhj0w4LYi5gLe3vS9_-CsnbgsGHkENt7fATq33lGpAXCPMZ2n6rPpMkn88oJKJ7h7hNq-wkZJ64Jp5auY_4eoZcGduSdgAf-Ao0"/>
+</div>
+<div class="p-8">
+<h3 class="font-headline-md text-2xl text-primary mb-2">Lingkungan Sekolah</h3>
+<p class="font-body-md text-on-surface-variant">Lingkungan yang hijau dan luas bagi siswa untuk bermain, belajar, dan berkembang di luar ruang kelas.</p>
+</div>
+</div>
+<div class="group bg-white rounded-[24px] overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-outline-variant/10 hover:shadow-xl transition-all">
+<div class="aspect-video relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AP1WRLvd271nKWkNJ3XKc0rQUWavJUYX6jIPMSgQZLM15OhAn_yiSI4xpghnPg_4SH7Qu7EQtflDo-X10TSPiakjpT65VIJyNAj_e-85ED37OxEUIah8VA2tkE49i5kstwlwmqTdjeXNwHGwnUBLzqk7AwIAreFrsgpogqkk-YA5_yUGHQguvAwTKd2h-ljcGYrwGo5MnznhYqoAWIgcIHZukWd4ETXsO7OhOXi_ux5kM7qbKRYEqMg1CkmLbw"/>
+</div>
+<div class="p-8">
+<h3 class="font-headline-md text-2xl text-primary mb-2">Fasilitas Sekolah</h3>
+<p class="font-body-md text-on-surface-variant">Gedung dan fasilitas yang terawat dengan baik mendukung suasana belajar yang kondusif bagi seluruh siswa.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Enhanced Achievements -->
+<section class="py-32 bg-primary text-on-primary">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div>
+<span class="font-label-md text-secondary-fixed mb-4 block uppercase tracking-wider font-bold">Kebanggaan Bulusan</span>
+<h2 class="font-headline-lg text-4xl lg:text-5xl mb-6">Prestasi Kami</h2>
+<p class="font-body-lg text-on-primary/80 mb-10 leading-relaxed">
+                    Kami bangga dengan dedikasi dan keunggulan siswa dan staf kami. Kerja keras mereka terus mengharumkan nama SDN Bulusan di berbagai bidang akademik dan non-akademik.
+                </p>
+<div class="space-y-6">
+<div class="bg-white/10 backdrop-blur-sm p-6 rounded-[20px] border border-white/20 flex gap-6 items-center">
+<div class="w-16 h-16 rounded-full bg-secondary-fixed text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-3xl">emoji_events</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-xl font-bold mb-1">Juara 1 Lomba MAPSI 2024</h4>
+<p class="font-body-md text-on-primary/70">Tingkat Kecamatan Tembalang</p>
+</div>
+</div>
+<div class="bg-white/10 backdrop-blur-sm p-6 rounded-[20px] border border-white/20 flex gap-6 items-center">
+<div class="w-16 h-16 rounded-full bg-tertiary-fixed text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-3xl">sports_soccer</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-xl font-bold mb-1">Juara 2 O2SN 2023</h4>
+<p class="font-body-md text-on-primary/70">Cabang Olahraga Atletik</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-square md:aspect-[4/3] rounded-[24px] overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLvhLW0DBUXKkUWElFqHcJcIk8ZP9eIVjNdchNU7Yy3AbU3nXz-lHXgavjsL3v8QrXgeSzorZxYm8Re7PRikBhAC_0ALm2CQVzrmb-NY9Q9kyfMG2Y24-A77eW0C3_AhhF9Nso6omdvdOJyIDqHPOYkUoUZpcRZXstDU9Gsakk6o6BNsU_h7DlHF0qUWpr-MrHwfDwhaxnlxuL1xx2VvzmGo8380HKMdtic26m4FsQ8COdz3tk3cdmTrJ9Y"/>
+</div>
+<div class="absolute -bottom-8 -left-8 bg-white text-primary p-8 rounded-[24px] shadow-xl max-w-sm hidden md:block">
+<h4 class="font-headline-md font-bold mb-2">Staf Berdedikasi</h4>
+<p class="font-body-md text-on-surface-variant">Tim pendidik kami yang berkomitmen bekerja sama untuk kesuksesan siswa.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Modernized Information Center -->
+<section class="py-32 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-4xl text-primary mb-4">Pusat Informasi</h2>
+<p class="font-body-lg text-on-surface-variant max-w-2xl mx-auto">Dapatkan berita, pengumuman, dan acara terbaru di SDN Bulusan.</p>
+</div>
+<div class="bg-white rounded-[24px] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-outline-variant/10 overflow-hidden">
+<!-- Tab Headers -->
+<div class="flex border-b border-outline-variant/10 bg-surface-variant/30 px-4 pt-4 gap-2 overflow-x-auto">
+<button class="px-8 py-4 font-label-md text-primary border-b-4 border-primary bg-white rounded-t-[12px] font-bold whitespace-nowrap">Berita Terkini</button>
+<button class="px-8 py-4 font-label-md text-on-surface-variant hover:text-primary hover:bg-white/50 transition-colors rounded-t-[12px] whitespace-nowrap">Pengumuman</button>
+<button class="px-8 py-4 font-label-md text-on-surface-variant hover:text-primary hover:bg-white/50 transition-colors rounded-t-[12px] whitespace-nowrap">Agenda</button>
+</div>
+<!-- Tab Content -->
+<div class="p-8 md:p-12 bg-white">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- News Card 1 -->
+<div class="bg-surface-variant/20 rounded-[20px] p-6 border border-outline-variant/10 hover:shadow-lg transition-shadow group">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined">article</span>
+</div>
+<span class="text-sm font-label-md text-secondary mb-3 block font-bold">28 Agustus 2024</span>
+<h3 class="font-headline-md text-xl font-bold text-primary group-hover:text-secondary transition-colors mb-4 line-clamp-2">SDN BULUSAN BERPRESTASI LOMBA MAPSI</h3>
+<p class="font-body-md text-on-surface-variant line-clamp-3 mb-6">Prestasi membanggakan diraih oleh siswa-siswi SDN Bulusan dalam ajang Lomba MAPSI tingkat kota.</p>
+<a class="text-primary font-label-md font-bold flex items-center gap-2 group-hover:text-secondary" href="#">Baca Selengkapnya <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<!-- News Card 2 -->
+<div class="bg-surface-variant/20 rounded-[20px] p-6 border border-outline-variant/10 hover:shadow-lg transition-shadow group">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined">campaign</span>
+</div>
+<span class="text-sm font-label-md text-secondary mb-3 block font-bold">09 Juni 2023</span>
+<h3 class="font-headline-md text-xl font-bold text-primary group-hover:text-secondary transition-colors mb-4 line-clamp-2">Edaran MPLS - Transisi PAUD ke SD Tahun 2023</h3>
+<p class="font-body-md text-on-surface-variant line-clamp-3 mb-6">Informasi penting terkait Masa Pengenalan Lingkungan Sekolah bagi peserta didik baru.</p>
+<a class="text-primary font-label-md font-bold flex items-center gap-2 group-hover:text-secondary" href="#">Baca Selengkapnya <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<!-- News Card 3 -->
+<div class="bg-surface-variant/20 rounded-[20px] p-6 border border-outline-variant/10 hover:shadow-lg transition-shadow group">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined">school</span>
+</div>
+<span class="text-sm font-label-md text-secondary mb-3 block font-bold">13 Juni 2021</span>
+<h3 class="font-headline-md text-xl font-bold text-primary group-hover:text-secondary transition-colors mb-4 line-clamp-2">PPDB Tahun 2023/2024</h3>
+<p class="font-body-md text-on-surface-variant line-clamp-3 mb-6">Jadwal dan persyaratan pendaftaran peserta didik baru SDN Bulusan tahun ajaran mendatang.</p>
+<a class="text-primary font-label-md font-bold flex items-center gap-2 group-hover:text-secondary" href="#">Baca Selengkapnya <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+</div>
+<div class="mt-12 text-center">
+<button class="px-8 py-3 bg-primary text-white font-label-md font-bold rounded-full hover:bg-primary/90 transition-colors">
+                            Lihat Semua Informasi
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Dedicated Admission Section -->
+<section class="py-32 bg-secondary-container/20">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="bg-white rounded-[24px] shadow-xl overflow-hidden border border-outline-variant/10">
+<div class="grid grid-cols-1 lg:grid-cols-2">
+<div class="p-12 md:p-16 flex flex-col justify-center">
+<h2 class="font-headline-lg text-4xl text-primary mb-6">Penerimaan Peserta Didik Baru (PPDB)</h2>
+<p class="font-body-lg text-on-surface-variant mb-8">
+                        Bergabunglah bersama kami di SDN Bulusan. Kami menantikan kehadiran siswa-siswi baru untuk tumbuh dan berkembang bersama.
+                    </p>
+<div class="space-y-4 mb-10">
+<div class="flex items-center gap-4">
+<div class="w-8 h-8 rounded-full bg-secondary/10 text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-sm">check</span>
+</div>
+<span class="font-body-md text-on-surface">Usia minimal 6 tahun pada 1 Juli</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-8 h-8 rounded-full bg-secondary/10 text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-sm">check</span>
+</div>
+<span class="font-body-md text-on-surface">Fotokopi Akte Kelahiran &amp; KK</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-8 h-8 rounded-full bg-secondary/10 text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-sm">check</span>
+</div>
+<span class="font-body-md text-on-surface">Mengisi formulir pendaftaran</span>
+</div>
+</div>
+<div>
+<button class="bg-primary text-on-primary px-10 py-4 rounded-full font-label-md font-bold hover:bg-primary/90 transition-all shadow-md text-lg">
+                            Daftar Sekarang
+                        </button>
+</div>
+</div>
+<div class="relative min-h-[400px] bg-primary">
+<img class="absolute inset-0 w-full h-full object-cover opacity-80 mix-blend-overlay" src="https://lh3.googleusercontent.com/aida/AP1WRLs7OZ70AWAhp1Bqv5tPh7hhfw5kTu7aKFQP6Pe5jcrmMnFrccdIhuZZzAL-RahAJfyHQJAxpmpnn2P8Df5uCuGlBrqn7qG16duharTLeBMJeJzfq4nC2WTbBlq0Lmh5Z-AvMct7RoeUCGBKgFVydeCZugdNqDwkmgBIHYJfVBLyJaCTxBVHMpKuke9lYWZKnLTHVAoXL1_yAtcDz3fA5Kzun0SjEsgq6_RHcmHjrnGnX3mIA8YqaKO0egU"/>
+<div class="absolute inset-0 flex items-center justify-center p-12 text-center">
+<div class="bg-white/10 backdrop-blur-md p-8 rounded-[20px] border border-white/20">
+<h3 class="font-headline-md text-2xl text-white mb-2">Tahun Ajaran 2024/2025</h3>
+<p class="text-white/90 font-body-md">Pendaftaran segera dibuka. Siapkan dokumen Anda.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section (Pre-Footer) -->
+<section class="py-24 bg-surface">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center">
+<h2 class="font-headline-lg text-4xl text-primary mb-8">Siap Bergabung dengan Kami?</h2>
+<p class="font-body-lg text-on-surface-variant max-w-2xl mx-auto mb-10">Punya pertanyaan tentang program kami atau proses penerimaan? Tim kami siap membantu.</p>
+<button class="bg-secondary text-white px-10 py-4 rounded-full font-label-md font-bold hover:bg-secondary/90 transition-all shadow-lg text-lg inline-flex items-center gap-3">
+<span class="material-symbols-outlined">support_agent</span> Hubungi Administrasi
+        </button>
+</div>
+</section>
+</main>
+<!-- Rich Footer -->
+<footer class="bg-primary text-on-primary w-full mt-auto">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-20">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 font-body-md">
+<!-- Brand/Identity -->
+<div class="col-span-1 lg:col-span-1">
+<h2 class="font-headline-md text-2xl text-on-primary mb-6 flex items-center gap-3">
+<img alt="School Logo" class="h-10 w-auto brightness-0 invert" src="https://lh3.googleusercontent.com/aida/AP1WRLtBqz5NMsp-WWL3_jAw8QFdW6yJFVLOUY46Fw1i9QpmeHf7vxv4oipnmv3IU-2gJRUeXSbA2gED1DjFOdEFnJvStmCjbtYfdvUURRKkFrYhXB2vvKRAFfBQd6I4lz426iGknj-kLpzTHbCG2FfpQfuBWNbczZ853OFTqdKdrUjF30_xuDHagEIQVBmAyOAfFIMEH_rN6s8T5M5v8MQN1IBpKCq2P0n5YF3ZBH0RzqvxecuXvvbw1BYv8wc"/>
+                SDN Bulusan
+            </h2>
+<p class="text-on-primary/80 mb-8 leading-relaxed">
+                Menyediakan pendidikan dasar yang berkualitas, membentuk karakter siswa yang berbudi pekerti luhur, cerdas, dan terampil.
+            </p>
+<div class="flex gap-4">
+<a class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors" href="#">
+<span class="material-symbols-outlined">qr_code_2</span>
+</a>
+<a class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors" href="#">
+<span class="material-symbols-outlined">smart_display</span>
+</a>
+<a class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors" href="#">
+<span class="material-symbols-outlined">photo_camera</span>
+</a>
+</div>
+</div>
+<!-- Quick Links -->
+<div>
+<h3 class="font-headline-sm text-lg font-bold mb-6 text-secondary-fixed">Tautan Cepat</h3>
+<ul class="space-y-4">
+<li><a class="text-on-primary/80 hover:text-white transition-colors flex items-center gap-2" href="#"><span class="material-symbols-outlined text-sm">chevron_right</span> Profil</a></li>
+<li><a class="text-on-primary/80 hover:text-white transition-colors flex items-center gap-2" href="#"><span class="material-symbols-outlined text-sm">chevron_right</span> Akademik</a></li>
+<li><a class="text-on-primary/80 hover:text-white transition-colors flex items-center gap-2" href="#"><span class="material-symbols-outlined text-sm">chevron_right</span> Ekstrakurikuler</a></li>
+<li><a class="text-on-primary/80 hover:text-white transition-colors flex items-center gap-2" href="#"><span class="material-symbols-outlined text-sm">chevron_right</span> Galeri</a></li>
+<li><a class="text-on-primary/80 hover:text-white transition-colors flex items-center gap-2" href="#"><span class="material-symbols-outlined text-sm">chevron_right</span> PPDB</a></li>
+</ul>
+</div>
+<!-- Contact Details -->
+<div class="lg:col-span-2">
+<h3 class="font-headline-sm text-lg font-bold mb-6 text-secondary-fixed">Hubungi Kami</h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+<ul class="space-y-4">
+<li class="flex items-start gap-3 text-on-primary/80">
+<span class="material-symbols-outlined mt-1 text-secondary-fixed">location_on</span>
+<span>Jl. Bulusan Selatan Raya, Kec. Tembalang, Semarang</span>
+</li>
+<li class="flex items-center gap-3 text-on-primary/80">
+<span class="material-symbols-outlined text-secondary-fixed">call</span>
+<span>(024) 76482524</span>
+</li>
+<li class="flex items-center gap-3 text-on-primary/80">
+<span class="material-symbols-outlined text-secondary-fixed">mail</span>
+<span>sdnegeribulusan@gmail.com</span>
+</li>
+</ul>
+<div>
+<h4 class="font-label-md font-bold text-white mb-3">Jam Kerja</h4>
+<ul class="space-y-2 text-on-primary/80 text-sm">
+<li class="flex justify-between border-b border-white/10 pb-2"><span>Senin - Kamis:</span> <span>07:00 - 14:00</span></li>
+<li class="flex justify-between border-b border-white/10 pb-2"><span>Jumat:</span> <span>07:00 - 11:30</span></li>
+<li class="flex justify-between pb-2"><span>Sabtu - Minggu:</span> <span>Tutup</span></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Copyright -->
+<div class="pt-8 mt-16 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-on-primary/60 text-sm">
+<p>© 2024 SDN Bulusan. Hak Cipta Dilindungi.</p>
+<div class="flex gap-6">
+<a class="hover:text-white transition-colors" href="#">Kebijakan Privasi</a>
+<a class="hover:text-white transition-colors" href="#">Syarat dan Ketentuan</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
