@@ -139,10 +139,19 @@
         <main class="flex-grow p-6 md:p-8 overflow-y-auto">
             <!-- Flash Messages -->
             @if(session('success'))
-                <div class="mb-6 p-4 bg-secondary-container text-on-secondary-container border-l-4 border-secondary rounded-lg shadow flex items-center gap-3">
+                <div id="flash-success" class="mb-6 p-4 bg-blue-50 text-blue-800 border-l-4 border-blue-500 rounded-lg shadow flex items-center gap-3 transition-opacity duration-500">
                     <span class="material-symbols-outlined">check_circle</span>
                     <span class="font-semibold text-sm">{{ session('success') }}</span>
                 </div>
+                <script>
+                    setTimeout(() => {
+                        const flash = document.getElementById('flash-success');
+                        if (flash) {
+                            flash.style.opacity = '0';
+                            setTimeout(() => flash.remove(), 500);
+                        }
+                    }, 3000);
+                </script>
             @endif
 
             @if(session('error'))

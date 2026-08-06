@@ -5,7 +5,7 @@
 @section('content')
 <div class="space-y-8">
     <div>
-        <h2 class="font-headline-md text-3xl font-bold text-primary">Selamat Datang di CMS</h2>
+        <h2 class="font-headline-md text-3xl font-bold text-primary">Selamat Datang Admin</h2>
         <p class="text-on-surface-variant mt-1">Kelola informasi publik dan data operasional SDN Bulusan.</p>
     </div>
 
@@ -101,22 +101,30 @@
             
             <div class="space-y-4">
                 <a href="{{ route('admin.berita.create') }}" class="flex items-center gap-3 p-3 rounded-xl hover:bg-surface-variant transition-colors text-sm font-semibold text-primary">
-                    <span class="material-symbols-outlined text-primary bg-primary/10 w-10 h-10 rounded-full flex items-center justify-center">edit_document</span>
+                    <div class="bg-primary/10 w-10 h-10 rounded-full flex items-center justify-center shrink-0">
+                        <span class="material-symbols-outlined text-primary">edit_document</span>
+                    </div>
                     Tulis Berita Baru
                 </a>
 
                 <a href="{{ route('admin.pengumuman.create') }}" class="flex items-center gap-3 p-3 rounded-xl hover:bg-surface-variant transition-colors text-sm font-semibold text-primary">
-                    <span class="material-symbols-outlined text-secondary bg-secondary/10 w-10 h-10 rounded-full flex items-center justify-center">campaign</span>
+                    <div class="bg-secondary/10 w-10 h-10 rounded-full flex items-center justify-center shrink-0">
+                        <span class="material-symbols-outlined text-secondary">campaign</span>
+                    </div>
                     Buat Pengumuman Baru
                 </a>
 
                 <a href="{{ route('admin.guru.create') }}" class="flex items-center gap-3 p-3 rounded-xl hover:bg-surface-variant transition-colors text-sm font-semibold text-primary">
-                    <span class="material-symbols-outlined text-primary bg-primary/10 w-10 h-10 rounded-full flex items-center justify-center">person_add</span>
+                    <div class="bg-primary/10 w-10 h-10 rounded-full flex items-center justify-center shrink-0">
+                        <span class="material-symbols-outlined text-primary">person_add</span>
+                    </div>
                     Tambah Data Guru
                 </a>
 
                 <a href="{{ route('admin.galeri-foto.create') }}" class="flex items-center gap-3 p-3 rounded-xl hover:bg-surface-variant transition-colors text-sm font-semibold text-primary">
-                    <span class="material-symbols-outlined text-secondary bg-secondary/10 w-10 h-10 rounded-full flex items-center justify-center">create_new_folder</span>
+                    <div class="bg-secondary/10 w-10 h-10 rounded-full flex items-center justify-center shrink-0">
+                        <span class="material-symbols-outlined text-secondary">create_new_folder</span>
+                    </div>
                     Buat Album Galeri
                 </a>
             </div>

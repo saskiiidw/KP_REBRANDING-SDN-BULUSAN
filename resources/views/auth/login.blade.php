@@ -5,7 +5,7 @@
     <!-- Header -->
     <div class="text-center mb-8">
         <img alt="School Logo" class="h-16 w-auto mx-auto mb-4" src="{{ asset('images/logo.png') }}" loading="lazy"/>
-        <h2 class="font-headline-md text-2xl font-bold text-primary">Login CMS Operator</h2>
+        <h2 class="font-headline-md text-2xl font-bold text-primary tracking-wide">LOGIN</h2>
         <p class="text-sm text-on-surface-variant mt-2">SDN Bulusan Kota Semarang</p>
     </div>
 
@@ -45,7 +45,7 @@
     </form>
 
     <div class="mt-8 pt-6 border-t border-outline-variant/30 text-center">
-        <a href="{{ route('home') }}" class="text-secondary hover:underline font-label-md font-semibold text-sm inline-flex items-center gap-2">
+        <a href="{{ route('home') }}" class="text-secondary hover:text-secondary-fixed transition-colors outline-none font-label-md font-semibold text-sm inline-flex items-center gap-2">
             <span class="material-symbols-outlined text-sm">arrow_back</span>
             Kembali ke Beranda
         </a>
