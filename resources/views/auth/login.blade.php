@@ -22,13 +22,13 @@
         @csrf
         <div>
             <label for="email" class="block text-sm font-semibold text-primary mb-2">Alamat Email</label>
-            <input type="email" name="email" id="email" value="{{ old('email') }}" required autofocus
+            <input type="email" name="email" id="email" value="{{ old('email') }}" required autofocus autocomplete="username"
                    class="w-full px-4 py-3 rounded-xl border border-outline/30 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all text-sm"/>
         </div>
 
         <div>
             <label for="password" class="block text-sm font-semibold text-primary mb-2">Password</label>
-            <input type="password" name="password" id="password" required
+            <input type="password" name="password" id="password" required autocomplete="current-password"
                    class="w-full px-4 py-3 rounded-xl border border-outline/30 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all text-sm"/>
         </div>
 
