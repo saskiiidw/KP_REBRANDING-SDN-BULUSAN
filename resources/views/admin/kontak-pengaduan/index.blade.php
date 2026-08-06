@@ -49,7 +49,7 @@
                         <th class="p-6">Subjek</th>
                         <th class="p-6">Tgl Masuk</th>
                         <th class="p-6">Status</th>
-                        <th class="p-6 text-right">Aksi</th>
+                        <th class="p-6 text-center">Aksi</th>
                     </tr>
                 </thead>
                 <tbody class="divide-y divide-outline-variant/20 text-sm">
@@ -77,8 +77,8 @@
                                     {{ $msg->status_penanganan }}
                                 </span>
                             </td>
-                            <td class="p-6 text-right">
-                                <div class="flex justify-end gap-2">
+                            <td class="p-6 text-center">
+                                <div class="flex justify-center gap-2">
                                     <a href="{{ route('admin.kontak-pengaduan.show', $msg->id) }}" class="p-2 text-secondary hover:bg-secondary/10 rounded-lg transition-colors" title="Buka Detail Pesan">
                                         <span class="material-symbols-outlined text-sm">visibility</span>
                                     </a>

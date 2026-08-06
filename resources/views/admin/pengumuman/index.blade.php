@@ -41,7 +41,7 @@
                         <th class="p-6">Tgl Berakhir</th>
                         <th class="p-6">Lampiran</th>
                         <th class="p-6">Status</th>
-                        <th class="p-6 text-right">Aksi</th>
+                        <th class="p-6 text-center">Aksi</th>
                     </tr>
                 </thead>
                 <tbody class="divide-y divide-outline-variant/20 text-sm">
@@ -68,8 +68,8 @@
                                     {{ $item->status }}
                                 </span>
                             </td>
-                            <td class="p-6 text-right">
-                                <div class="flex justify-end gap-2">
+                            <td class="p-6 text-center">
+                                <div class="flex justify-center gap-2">
                                     <a href="{{ route('admin.pengumuman.edit', $item->id) }}" class="p-2 text-secondary hover:bg-secondary/10 rounded-lg transition-colors" title="Sunting Pengumuman">
                                         <span class="material-symbols-outlined text-sm">edit</span>
                                     </a>

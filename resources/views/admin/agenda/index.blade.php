@@ -40,7 +40,7 @@
                         <th class="p-6">Deskripsi</th>
                         <th class="p-6">Tanggal Mulai</th>
                         <th class="p-6">Tanggal Selesai</th>
-                        <th class="p-6 text-right">Aksi</th>
+                        <th class="p-6 text-center">Aksi</th>
                     </tr>
                 </thead>
                 <tbody class="divide-y divide-outline-variant/20 text-sm">
@@ -58,8 +58,8 @@
                             <td class="p-6 text-on-surface-variant font-medium">
                                 {{ $item->tanggal_selesai->format('d M Y') }}
                             </td>
-                            <td class="p-6 text-right">
-                                <div class="flex justify-end gap-2">
+                            <td class="p-6 text-center">
+                                <div class="flex justify-center gap-2">
                                     <a href="{{ route('admin.agenda.edit', $item->id) }}" class="p-2 text-secondary hover:bg-secondary/10 rounded-lg transition-colors" title="Sunting Agenda">
                                         <span class="material-symbols-outlined text-sm">edit</span>
                                     </a>
