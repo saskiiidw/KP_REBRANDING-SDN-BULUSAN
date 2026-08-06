@@ -6,7 +6,7 @@
 <!-- Hero Section -->
 <section class="relative min-h-[640px] flex items-start pt-16 md:pt-20 pb-32 justify-center overflow-hidden">
     <div class="absolute inset-0 z-0">
-        <img class="w-full h-full object-cover opacity-90" src="{{ asset('images/hero_school.jpg') }}" alt="SDN Bulusan Facade" loading="eager"/>
+        <img class="w-full h-full object-cover opacity-90" src="{{ asset('images/hero_school_new.png') }}" alt="SDN Bulusan Facade" loading="eager"/>
         <div class="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/70 to-transparent"></div>
     </div>
     <div class="relative z-10 w-full max-w-container-max mx-auto px-4 md:px-margin-desktop grid grid-cols-1 md:grid-cols-12 gap-gutter">

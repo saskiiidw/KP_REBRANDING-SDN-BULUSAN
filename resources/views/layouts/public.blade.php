@@ -64,32 +64,32 @@
                 </div>
                 
                 <!-- Contact Details -->
-                <div class="lg:col-span-2">
+                <div>
                     <h3 class="font-headline-sm text-lg font-bold mb-6 text-secondary-fixed">Hubungi Kami</h3>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
-                        <ul class="space-y-4 text-sm">
-                            <li class="flex items-start gap-3 text-on-primary/80">
-                                <span class="material-symbols-outlined mt-1 text-secondary-fixed shrink-0">location_on</span>
-                                <span>Jl. Bulusan Selatan Raya, Kec. Tembalang, Semarang</span>
-                            </li>
-                            <li class="flex items-center gap-3 text-on-primary/80">
-                                <span class="material-symbols-outlined text-secondary-fixed shrink-0">call</span>
-                                <span>(024) 76482524</span>
-                            </li>
-                            <li class="flex items-center gap-3 text-on-primary/80">
-                                <span class="material-symbols-outlined text-secondary-fixed shrink-0">mail</span>
-                                <span>sdnegeribulusan@gmail.com</span>
-                            </li>
-                        </ul>
-                        <div>
-                            <h4 class="font-label-md font-bold text-white mb-3">Jam Kerja</h4>
-                            <ul class="space-y-2 text-on-primary/80 text-sm">
-                                <li class="flex justify-between border-b border-white/10 pb-2"><span>Senin - Kamis:</span> <span>07:00 - 14:00</span></li>
-                                <li class="flex justify-between border-b border-white/10 pb-2"><span>Jumat:</span> <span>07:00 - 11:30</span></li>
-                                <li class="flex justify-between pb-2"><span>Sabtu - Minggu:</span> <span>Tutup</span></li>
-                            </ul>
-                        </div>
-                    </div>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex items-start gap-3 text-on-primary/80">
+                            <span class="material-symbols-outlined mt-1 text-secondary-fixed shrink-0">location_on</span>
+                            <span>Jl. Bulusan Selatan Raya, Kec. Tembalang, Semarang</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-on-primary/80">
+                            <span class="material-symbols-outlined text-secondary-fixed shrink-0">call</span>
+                            <span>(024) 76482524</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-on-primary/80">
+                            <span class="material-symbols-outlined text-secondary-fixed shrink-0">mail</span>
+                            <span>sdnegeribulusan@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Jam Kerja -->
+                <div>
+                    <h3 class="font-headline-sm text-lg font-bold mb-6 text-secondary-fixed">Jam Kerja</h3>
+                    <ul class="space-y-2 text-on-primary/80 text-sm">
+                        <li class="flex justify-between border-b border-white/10 pb-2"><span>Senin - Kamis:</span> <span>07:00 - 14:00</span></li>
+                        <li class="flex justify-between border-b border-white/10 pb-2"><span>Jumat:</span> <span>07:00 - 11:30</span></li>
+                        <li class="flex justify-between pb-2"><span>Sabtu - Minggu:</span> <span>Tutup</span></li>
+                    </ul>
                 </div>
             </div>
             
