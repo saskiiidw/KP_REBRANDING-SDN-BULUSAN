@@ -11,8 +11,8 @@
     </div>
     <div class="relative z-10 w-full max-w-container-max mx-auto px-4 md:px-margin-desktop grid grid-cols-1 md:grid-cols-12 gap-gutter">
         <div class="md:col-span-9 lg:col-span-7 flex flex-col justify-start text-white">
-            <span class="font-label-md text-secondary-fixed mb-4 uppercase tracking-[0.2em] font-extrabold">Selamat Datang di</span>
-            <h1 class="font-headline-lg-mobile md:font-headline-lg text-5xl md:text-6xl font-extrabold text-white mb-6 leading-tight uppercase">SD Negeri Bulusan</h1>
+            <span class="text-sm md:text-base text-secondary-fixed mb-4 uppercase tracking-[0.2em] font-extrabold">Selamat Datang di</span>
+            <h1 class="font-headline-lg-mobile md:font-headline-lg text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight uppercase">SD Negeri Bulusan</h1>
             <p class="font-body-lg text-lg md:text-xl text-white/90 mb-10 max-w-xl leading-relaxed">
                 Menyelenggarakan pendidikan dasar berkualitas di Kota Semarang. Membentuk generasi pembelajar yang cerdas, bertakwa, berakhlak mulia, dan peduli lingkungan.
             </p>
