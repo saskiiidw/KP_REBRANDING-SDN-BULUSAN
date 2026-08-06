@@ -211,18 +211,10 @@ class DatabaseSeeder extends Seeder
  
         // 11. Tautan Layanan
         TautanLayanan::create([
-            'nama_layanan' => 'Portal Pendaftaran PPDB',
-            'url' => 'https://ppd.semarangkota.go.id',
-            'ikon' => 'how_to_reg',
-            'urutan' => 1,
-            'is_eksternal' => true
-        ]);
- 
-        TautanLayanan::create([
             'nama_layanan' => 'Sang Juara',
             'url' => 'https://portaldisdik.semarangkota.go.id/',
             'ikon' => 'emoji_events',
-            'urutan' => 2,
+            'urutan' => 1,
             'is_eksternal' => true
         ]);
 
@@ -230,7 +222,7 @@ class DatabaseSeeder extends Seeder
             'nama_layanan' => 'SPMB',
             'url' => 'https://spmb.semarangkota.go.id/',
             'ikon' => 'school',
-            'urutan' => 3,
+            'urutan' => 2,
             'is_eksternal' => true
         ]);
 
@@ -238,7 +230,7 @@ class DatabaseSeeder extends Seeder
             'nama_layanan' => 'SIGAP',
             'url' => 'https://sigap-disdik.semarangkota.go.id/',
             'ikon' => 'security',
-            'urutan' => 4,
+            'urutan' => 3,
             'is_eksternal' => true
         ]);
         
