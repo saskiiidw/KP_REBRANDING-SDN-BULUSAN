@@ -17,7 +17,7 @@
                 <span class="text-sm font-semibold text-on-surface-low">Total Berita</span>
                 <h3 class="text-3xl font-bold text-primary mt-2">{{ $counts['berita'] }}</h3>
             </div>
-            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all">
+            <div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-white transition-all">
                 <span class="material-symbols-outlined">article</span>
             </div>
         </div>
@@ -39,7 +39,7 @@
                 <span class="text-sm font-semibold text-on-surface-low">Agenda Kegiatan</span>
                 <h3 class="text-3xl font-bold text-primary mt-2">{{ $counts['agenda'] }}</h3>
             </div>
-            <div class="w-12 h-12 bg-tertiary-container/10 rounded-full flex items-center justify-center text-tertiary group-hover:bg-tertiary group-hover:text-white transition-all">
+            <div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-white transition-all">
                 <span class="material-symbols-outlined">calendar_today</span>
             </div>
         </div>
@@ -50,7 +50,7 @@
                 <span class="text-sm font-semibold text-on-surface-low">Guru & Staf</span>
                 <h3 class="text-3xl font-bold text-primary mt-2">{{ $counts['guru'] }}</h3>
             </div>
-            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all">
+            <div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-white transition-all">
                 <span class="material-symbols-outlined">badge</span>
             </div>
         </div>
