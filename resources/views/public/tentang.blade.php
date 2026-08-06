@@ -136,7 +136,7 @@
                             
                             @if($item->kelas_diampu)
                                 <span class="text-xs text-on-surface-low font-semibold bg-surface-variant/60 px-3 py-1 rounded-full inline-block">
-                                    Wali Kelas: {{ $item->kelas_diampu }}
+                                    {{ $item->kelas_diampu }}
                                 </span>
                             @endif
                         </div>
