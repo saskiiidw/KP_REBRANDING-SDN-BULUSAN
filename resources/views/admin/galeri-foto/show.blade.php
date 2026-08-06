@@ -19,7 +19,7 @@
     <div class="bg-white p-6 md:p-8 rounded-[24px] shadow-sm border border-outline-variant/30 space-y-6">
         <h3 class="font-headline-sm text-xl font-bold text-primary border-b border-outline-variant/20 pb-4">Unggah Foto Baru (Bisa Pilih Banyak)</h3>
         
-        <form action="{{ route('admin.admin.galeri-foto.photos.store', $album->id) }}" method="POST" enctype="multipart/form-data" class="space-y-6">
+        <form action="{{ route('admin.galeri-foto.photos.store', $album->id) }}" method="POST" enctype="multipart/form-data" class="space-y-6">
             @csrf
             
             <div class="border-2 border-dashed border-outline-variant/60 rounded-[20px] p-8 text-center bg-surface-variant/10 relative hover:bg-surface-variant/20 transition-colors">
@@ -57,7 +57,7 @@
                         
                         <!-- Hover Delete Overlay -->
                         <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                            <form action="{{ route('admin.admin.galeri-foto.photos.destroy', $foto->id) }}" method="POST" onsubmit="return confirm('Apakah Anda yakin ingin menghapus foto ini?');">
+                            <form action="{{ route('admin.galeri-foto.photos.destroy', $foto->id) }}" method="POST" onsubmit="return confirm('Apakah Anda yakin ingin menghapus foto ini?');">
                                 @csrf
                                 @method('DELETE')
                                 <button type="submit" class="bg-error text-white p-3 rounded-full hover:bg-error/90 transition-colors shadow-lg">
