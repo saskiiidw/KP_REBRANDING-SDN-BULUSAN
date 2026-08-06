@@ -76,8 +76,8 @@
             </a>
             
             @auth
-                <a href="{{ route('admin.dashboard') }}" class="bg-secondary text-on-secondary px-4 py-1.5 xl:px-6 xl:py-2 rounded-full font-label-md lg:text-xs xl:text-label-md hover:bg-secondary/90 transition-colors hidden sm:block whitespace-nowrap">
-                    CMS Panel
+                <a href="{{ route('admin.dashboard') }}" class="text-on-surface-variant hover:bg-secondary-container/20 rounded-full transition-all p-2 duration-150 ease-in-out flex items-center justify-center shrink-0" title="CMS Panel">
+                    <span class="material-symbols-outlined">account_circle</span>
                 </a>
             @else
                 <a href="{{ route('login') }}" class="text-on-surface-variant hover:bg-secondary-container/20 rounded-full transition-all p-2 duration-150 ease-in-out flex items-center justify-center shrink-0" title="Login Operator">

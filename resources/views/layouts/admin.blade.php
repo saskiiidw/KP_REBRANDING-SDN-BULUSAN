@@ -36,7 +36,7 @@
     <!-- Sidebar Navigation -->
     <aside id="sidebar" class="hidden md:flex flex-col w-full md:w-72 bg-primary text-white shrink-0 shadow-lg min-h-screen transition-all">
         <div class="p-6 border-b border-white/10 hidden md:block">
-            <h1 class="font-headline-md text-2xl font-bold tracking-wide">CMS Bulusan</h1>
+            <h1 class="font-headline-md text-2xl font-bold tracking-wide">SD N Bulusan</h1>
             <p class="text-xs text-on-primary/60 mt-1">Sistem Manajemen Konten</p>
         </div>
         
