@@ -131,7 +131,7 @@
         <!-- Top Bar -->
         <header class="hidden md:flex justify-end items-center bg-white border-b border-outline-variant/30 py-4 px-8 shadow-sm">
             <div class="flex items-center gap-4">
-                <span class="text-sm font-medium text-on-surface-low">Hari Ini: {{ date('d F Y') }}</span>
+                
             </div>
         </header>
 
