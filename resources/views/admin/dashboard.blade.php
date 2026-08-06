@@ -61,8 +61,9 @@
         <div class="lg:col-span-2 bg-white p-6 md:p-8 rounded-[24px] shadow-sm border border-outline-variant/30 space-y-6">
             <div class="flex justify-between items-center border-b border-outline-variant/30 pb-4">
                 <h3 class="font-headline-md text-xl font-bold text-primary">Pesan Masuk Terbaru</h3>
-                <a href="{{ route('admin.kontak-pengaduan.index') }}" class="text-sm text-secondary hover:underline font-semibold flex items-center gap-1">
-                    Lihat Semua <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                <a href="{{ route('admin.kontak-pengaduan.index') }}" class="text-sm text-secondary font-semibold flex items-center gap-1 group hover:opacity-80 transition-all">
+                    <span>Lihat Semua</span>
+                    <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
                 </a>
             </div>
 
