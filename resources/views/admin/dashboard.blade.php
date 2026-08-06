@@ -87,9 +87,9 @@
                         </div>
                     </div>
                 @empty
-                    <div class="py-12 text-center text-on-surface-low text-sm">
-                        <span class="material-symbols-outlined text-4xl block mb-2">inbox</span>
-                        Tidak ada pesan masuk terbaru.
+                    <div class="py-12 flex items-center justify-center gap-2 text-on-surface-low text-sm">
+                        <span class="material-symbols-outlined text-xl">inbox</span>
+                        <span>Tidak ada pesan masuk terbaru.</span>
                     </div>
                 @endforelse
             </div>
