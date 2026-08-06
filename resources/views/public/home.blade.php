@@ -40,9 +40,7 @@
                         <img class="w-full h-full object-cover" src="{{ asset('images/default_kepsek.jpg') }}" alt="Harmana, S.Pd.SD" loading="lazy"/>
                     @endif
                 </div>
-                <div class="absolute -bottom-6 -right-6 bg-secondary text-white p-5 rounded-[20px] shadow-lg">
-                    <span class="material-symbols-outlined text-4xl">school</span>
-                </div>
+
             </div>
             <div class="md:col-span-7">
                 <span class="font-label-md text-secondary uppercase font-bold tracking-wider mb-2 block">Sambutan Hangat</span>
