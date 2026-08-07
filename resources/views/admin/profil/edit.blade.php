@@ -114,19 +114,7 @@
                     @endforeach
                 </div>
 
-                <!-- Organization Chart -->
-                <div class="bg-white p-6 rounded-[24px] shadow-sm border border-outline-variant/30 space-y-4">
-                    <h3 class="font-headline-sm text-xl font-bold text-primary border-b border-outline-variant/20 pb-4">Struktur Organisasi</h3>
-                    
-                    @if($profil->struktur_organisasi)
-                        <div class="mb-3">
-                            <a href="{{ asset('storage/' . $profil->struktur_organisasi) }}" target="_blank" class="text-sm text-secondary hover:underline font-semibold flex items-center gap-1">
-                                <span class="material-symbols-outlined text-sm">open_in_new</span> Lihat Dokumen Struktur
-                            </a>
-                        </div>
-                    @endif
-                    <input type="file" name="struktur_organisasi" class="w-full text-xs text-on-surface-variant"/>
-                </div>
+
             </div>
         </div>
 
