@@ -5,7 +5,7 @@
 @section('content')
 <div class="space-y-8">
     <div>
-        <h2 class="font-headline-md text-3xl font-bold text-primary">Selamat Datang Admin</h2>
+        <h2 class="font-headline-md text-3xl font-bold text-primary">Selamat Datang {{ ucfirst(Auth::user()->role) }}</h2>
         <p class="text-on-surface-variant mt-1">Kelola informasi publik dan data operasional SDN Bulusan.</p>
     </div>
 
