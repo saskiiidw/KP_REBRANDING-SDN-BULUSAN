@@ -134,10 +134,10 @@ class DatabaseSeeder extends Seeder
  
         Guru::create([
             'jabatan_id' => $guruKelasJabatan->id,
-            'nama' => 'Sri Sunarni, S.Pd.',
+            'nama' => 'Rukiyem, S.Pd.',
             'nip' => '197204151996032001',
             'nuptk' => '1234567890123456',
-            'kelas_diampu' => 'Kelas 1',
+            'kelas_diampu' => 'Kelas 2B',
             'foto' => 'guru/sri_sunarni.jpg',
             'status' => 'aktif',
             'urutan' => 2
