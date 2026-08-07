@@ -113,7 +113,7 @@
         </div>
         
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-            @forelse($guru as $item)
+            @forelse($guru->filter(fn($item) => !empty($item->foto)) as $item)
                 <div class="group bg-white rounded-[28px] overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.02)] border border-outline-variant/30 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between h-full">
                     <div>
                         <!-- Avatar Frame -->
