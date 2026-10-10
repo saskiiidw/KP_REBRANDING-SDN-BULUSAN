@@ -64,8 +64,8 @@
                     <div>
                         <label class="block text-sm font-semibold text-primary mb-2">Status Publikasi</label>
                         <select name="status" class="w-full px-4 py-2.5 rounded-xl border border-outline/30 outline-none text-sm bg-white" required>
+                            <option value="published" {{ old('status', 'published') === 'published' ? 'selected' : '' }}>Published</option>
                             <option value="draft" {{ old('status') === 'draft' ? 'selected' : '' }}>Draft</option>
-                            <option value="published" {{ old('status') === 'published' ? 'selected' : '' }}>Published</option>
                         </select>
                     </div>
 

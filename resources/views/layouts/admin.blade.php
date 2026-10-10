@@ -161,6 +161,20 @@
                 </div>
             @endif
 
+            @if($errors->any())
+                <div class="mb-6 p-4 bg-error-container text-on-error-container border-l-4 border-error rounded-lg shadow flex flex-col gap-2">
+                    <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined">error</span>
+                        <span class="font-bold text-sm">Terdapat kesalahan pada input Anda:</span>
+                    </div>
+                    <ul class="list-disc list-inside text-sm font-medium ml-8 space-y-1">
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
+
             @yield('content')
         </main>
     </div>
